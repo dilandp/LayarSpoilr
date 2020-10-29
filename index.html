@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Review - LayarSpoilr</title>
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place your kit's code here -->
+	<script src="https://kit.fontawesome.com/ae900d9042.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	
+</head>
+<body class="font-lato" onload="checkOnline()">
+	<header>
+		<div class="header-nav">
+			<h1>
+				<img src="assets/images/logo-white.png" class="logo" alt="LayarSpoilr Logo" title="LayarSpoilr">
+			</h1>
+
+			<div id="menu" class="bar-menu">
+				<i class="fas fa-bars"></i>
+			</div>
+	
+			<nav>
+				<ul>
+				   <li><a href="#trailer">Cuplikan</a></li>
+				   <li><a href="#rank">Peringkat</a></li>
+				   <li><a href="#next">Next On</a></li>
+				   <li><a href="#about">Tentang</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div id="content">
+			<article id="trailer" class="teaser-trailer color-theme-text">
+				<h2 class="font-roboto bold">Cuplikan</h2>
+				<div class="video">
+					<iframe id="embed-video" src="https://www.youtube.com/embed/e1SxNP7PWAc?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<img id="network-offline" src="assets/images/offline-video.png" alt="offline">
+				</div>
+				
+				<p><strong><i>Laskar Pelangi</i></strong> merupakan film hasil kolaborasi antara sutradara <b>Riri Riza</b>, penulis skenario <b>Salman Aristo</b>, dan produser <b>Mira Lesmana</b>.</p>
+
+				<p>Kembali ke tahun 1970, desa Gantong, Pulau Belitung, terdapat sebuah gedung sekolah SD dengan kondisi yang sangat memprihatinkan. Sekolah ini bernama SD Muhammadiyah Gantong dan menjadi satu-satunya tempat bersekolah anak-anak miskin di desa tersebut. SD ini juga terancam ditutup oleh dinas pendidikan setempat karena kekurangan murid.</p>
+
+				<p>Pemerintah mensyaratkan minimal ada 10 siswa yang bersekolah namun kini hanya ada sembilan siswa yang mendaftar di SD tersebut. Bapak Harfan selaku kepala sekolah hampir menyerah tapi Bu Muslimah tetap percaya akan ada satu lagi siswa yang mendaftar. Nasib sekolah terselamatkan dengan hadirnya Harun, siswa keterbelakangan mental dan Lintang, siswa miskin tapi jenius.</p>
+
+				<p>Saat ada lomba karnaval, SD Muhammadiyah hampir tidak bisa ikut serta karena tidak ada dana membuat kostum, namun berkat bakat seni yang dimiliki Mahar, mereka akhirnya memanfaatkan dedaunan yang disulap menjadi kostum dan berhasil memenangkan perlombaaan.</p>
+
+				<p>Prestasi anak-anak Laskar pelangi tak sampai di situ. Ketiga siswa paling pintar yaitu Lintang, Ikal, dan Sahara berhasil dalam lomba cerdas cermat. Bu Muslimah membuktikan bahwa meski dengan keterbatasan, dia mampu mendidik anak-anak miskin ini menjadi siswa yang berprestasi.</p>
+
+				<p>Sejak saat itu, Bu Muslimah dengan keikhlasan hati mendidik ke 11 muridnya dengan segala keterbatasan dan menamai mereka dengan julukan <em>anak-anak Laskar Pelangi</em>.</p>
+
+				<p>Penasaran cerita lengkapnya? </p>
+
+				<div class="button-watch">
+					<a href="#trailer" onclick="watchMovie()">KLIK UNTUK NONTON</a>
+				</div>
+
+			</article>
+
+			<article id="rank" class="rank-box-office color-theme-text">
+				<h2 class="font-roboto">Peringkat Box Office</h2>
+				<p>Dalam sejarah selalu ada catatan rekor angka jumlah penonton yang berbuah penghargaan entah itu Museum Rekor Indonesia maupun Guiness World Record. Kategori rekor jumlah penonton terbanyak yang pernah dicatat adalah:
+				</p>
+				 
+				<section>
+					<h3 class="font-roboto">Internasional</h3>
+					<div class="wrap-rank">
+						<div class="rank-movie">
+							<img src="assets/images/movie-01-starwars.jpg" class="featured-image" alt="starwars" title="starwars">
+							<p class="font-roboto">Saat ancaman baru terhadap galaksi meningkat, Rey, seorang pemulung gurun pasir, dan Finn, mantan stormtrooper, harus bergabung dengan Han Solo dan Chewbacca untuk mencari satu-satunya harapan untuk memulihkan perdamaian.</p>
+						</div>
+						<div class="rank-movie">
+							<img src="assets/images/movie-02-batman.jpg" class="featured-image" alt="batman" title="batman">
+							<p class="font-roboto">Khawatir akan tindakan Superman dibiarkan tidak terkendali, Batman menjadi Man of Steel, sementara dunia berjibaku dengan pahlawan seperti apa yang sebenarnya dibutuhkan oleh bumi.</p>
+						</div>
+						<div class="rank-movie">
+							<img src="assets/images/movie-03-avenger.jpg" class="featured-image" alt="avenger" title="avenger">
+							<p class="font-roboto">Setelah peristiwa Infinity War yang menghanguskan separuh alam semesta, para Avengers yang tersisa <i>"assemble"</i> sekali lagi untuk mengembalikan tindakan Thanos dan memulihkan keseimbangan alam semesta.</p>
+						</div>
+						<div class="rank-movie">
+							<img src="assets/images/movie-04-frozen.jpg" class="featured-image" alt="frozen" title="frozen">
+							<p class="font-roboto">Ketika Ratu Elsa yang baru dinobatkan secara tidak sengaja menggunakan kekuatannya untuk mengubah benda-benda menjadi es untuk mengutuk rumahnya menjadi musim dingin yang tak terbatas, saudara perempuannya Anna bekerja sama dengan seorang pria gunung, rusa yang lucu, dan manusia salju untuk mengubah kondisi cuaca.</p>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h3 class="font-roboto">Indonesia</h3>
+					<div class="wrap-rank">
+						<div class="rank-movie">
+							<img src="assets/images/movie-05-warkop.jpg" class="featured-image" alt="warkop" title="warkop">
+							<p class="font-roboto">Dono, Kasino, dan Indro adalah tiga orang sahabat yang bekerja sebagai petugas keamanaan di organisasi CHIIPS (Cara Hebat Ikut Ikutan Pelayanan Sosial) dimana tugas mereka adalah membantu menertibkan dan menjaga keamanan masyarakat. Namun, tingkah mereka yang konyol dan bermasalah selalu membuat jengkel dan marah atasan mereka.</p>
+						</div>
+						<div class="rank-movie">
+							<img src="assets/images/movie-06-dilan.jpg" class="featured-image" alt="dilan" title="dilan">
+							<p class="font-roboto">
+							Pada September 1990, Milea dan keluarganya pindah dari Jakarta ke Bandung. Saat hendak masuk di sebuah SMA, Milea bertemu dengan Dilan sang panglima geng motor. Dilan tak memperkenalkan dirinya, namun dengan sangat percaya diri segera meramal kalau Milea akan naik motor bersamanya dan menjadi pacarnya.</p>
+						</div>
+						<div class="rank-movie">
+							<img src="assets/images/movie-07-habibi.jpg" class="featured-image" alt="habibi" title="habibi">
+							<p class="font-roboto">Ini adalah kisah tentang menemukan jodoh. Sebuah cerita tentang menemukan cinta pertama dan cinta terakhir seseorang. Sebuah cerita tentang presiden ketiga Indonesia dan istrinya. Sebuah cerita tentang Habibie dan Ainun.</p>
+						</div>
+						<div class="rank-movie">
+							<img src="assets/images/movie-08-aadc.jpg" class="featured-image" alt="aadc" title="aadc">
+							<p class="font-roboto">Cinta sebagai seorang gadis yang cantik, pintar, periang dan langganan juara puisi di sekolahnya harus kalah dengan puisi Rangga, laki-laki pendiam dan dingin yang membuatnya jatuh hati. Di tengah masalah sahabatnya, Cinta dilanda dilema antara persahabatan dan cintanya dengan Rangga yang harus pergi satu bulan purnama.</p>
+						</div>
+					</div>
+				</section>
+			</article>
+
+			<article id="next" class="next-on color-theme-text">
+				<h2 class="font-roboto bold">List Tontonan</h2>
+				<section>
+					<div class="wrap-next">
+						<div class="wrap-img">
+							<img src="assets/images/movie-next-themartian.jpg">
+						</div>
+						<div class="description">
+							<span class="light">Next On</span>
+							<h3 class="font-roboto bold">The Martian: upaya survival di tengah abu-abunya kehidupan di planet masa depan</h3>
+							<p class="font-roboto">Film The Martian, yang kisahnya diangkat dari novel laris karya Andy Weir ini, Ridley Scott sang sutradara mengajak audiens untuk ikut menikmati momen kesendirian yang dialami sang tokoh utama, Mark Watney lewat monolog-monolog yang memancing tawa dan menyaksikan bagaimana proses adaptasi tokoh tersebut dalam mengatasi problematika yang harus ia alami. Sementara, di lain sisi, instansi pemerintah yang menginisiasi ekspedisi itu berusaha mencari cara untuk memulangkannya.</p>
+							<a href="#next" onclick="readMore()">Baca Lebih Lanjut</a>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="wrap-next">
+						<div class="wrap-img">
+							<img src="assets/images/movie-next-socialnetwork.jpg">
+						</div>
+						<div class="description">
+							<span class="light">Next On</span>
+							<h3 class="font-roboto bold">The Social Network: Mengungkap sisi gelap sang jenius</h3>
+							<p class="font-roboto">Hanya butuh enam tahun, jejaring sosial Facebook sudah meraup 500 juta pengguna. Hal ini membuat pendirinya, Mark Zuckerberg menjadi miliarder termuda dalam sejarah. Seorang mahasiswa Harvard dan jenius soal pemograman komputer, Mark mengerjakan sesuatu yang baru, merevolusi jaringan sosial global dan komunikasi. Meski demikian, kesuksesan yang diraihnya pun mengarah pada komplikasi pribadi dan juga hukum.</p>
+							<a href="#next" onclick="readMore()">Baca Lebih Lanjut</a>
+						</div>
+					</div>
+				</section>
+
+			</article>
+
+		</div>
+
+		<aside>
+			<article class="profile">
+				
+				<h2 id="about" class="font-roboto bold">Dilan Dan Pande</h2>
+				<figure>
+					<img src="assets/images/dilan.jpg">
+					<figcaption><i>Penulis Artikel</i></figcaption>
+				</figure>
+				
+				<section>
+					<div class="wrap-info-penulis">
+					<h3 class="font-roboto">Info Penulis</h3>
+				   	<table>
+				   		<tr>
+							<th><i class="fas fa-envelope-square"></i></th>
+							<td>dilandp16@gmail.com</td>
+				   		</tr>
+				   		<tr>
+							<th><i class="fab fa-instagram-square"></i></th>
+							<td>@dilandp</td>
+				   		</tr>
+				   		<tr>
+							<th><i class="fab fa-github-square"></i></th>
+							<td>@dilandp</td>
+				   		</tr>
+				   		<tr>
+							<th><i class="fas fa-phone-square-alt"></i></th>
+							<td>+62-privacy</td>
+				   		</tr>
+					</table>
+					</div>
+				</section>
+			</article>
+	   	</aside>
+	</main>
+
+	<footer>
+		<img src="assets/images/logo-white.png" class="footer-logo">
+	   	<p>Tempat Kumpulnya Pecinta Film</p> 
+	   	<p>&#169; 2020, LayarSpoilr</p>
+	   	<div class="footer-social-media-text">
+	   		<p class="bold">Social Media</p>
+	   	</div>
+	   	<div class="footer-social-media-icon">
+			<a href="#"><i class="fab fa-facebook-square"></i></a>
+			<a href="#"><i class="fab fa-twitter-square"></i></a>
+			<a href="#"><i class="fab fa-instagram-square"></i></a>
+		</div>
+	</footer>
+	<script type="text/javascript" src="assets/javascripts/interactive.js"></script>
+</body>
+</html>
