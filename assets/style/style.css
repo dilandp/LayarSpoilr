@@ -70,12 +70,12 @@ nav {
 }
 
 nav ul {
-	margin-top: 35px;
+	margin-top: 14px;
 	margin-right: 20px;
 }
 
 nav li {
-	display: inline;
+	display: inline-block;
 	list-style-type: none;
 	padding: 20px;
 }
@@ -121,8 +121,8 @@ footer {
 }
 
 .video iframe {
-	width: 600px; 
-	height: 300px;
+	width: 80vw; 
+	height: 380px;
 	margin: 0 auto;
 }
 
@@ -171,11 +171,11 @@ footer {
 #rank > p {
 	text-align: justify;
 	border-bottom: 1px solid gray;
-	padding-bottom: 15px;
+	padding-bottom: 20px;
 }
 
 #rank h3 {
-	margin: 10px 0;
+	margin: 20px 0 10px;
 	color: #029797;
 }
 
@@ -199,7 +199,7 @@ footer {
 
 #rank img {
 	width: 100%;
-	height: 120px;
+	height: 150px;
 	border-radius: 8px;
 	border: 1px solid gray;
 	object-fit: cover;
@@ -306,7 +306,7 @@ footer {
 }
 
 table tr th {
-	font-size: 20px;
+	font-size: 25px;
 	color: #02CACA;
 }
 
@@ -362,7 +362,7 @@ table tr td {
 		text-align: right;
 		font-size: x-large;
 		color: white;
-		margin: -45px 20px -25px;
+		margin: -50px 30px -25px;
 	}
 
 	.bar-menu > i:hover {
@@ -374,7 +374,7 @@ table tr td {
 		display: none;
 		flex-basis: 100%;
 		text-align: left;
-		margin-top: 40px;
+		margin-top: 43px;
 	}
 
 	nav ul {
@@ -410,18 +410,57 @@ table tr td {
 	}
 
 	.video iframe {
-		width: 80vw; 
-		height: 200px;
+		height: 300px;
 		margin: 0 auto;
 	}
 
 	.wrap-rank {
-		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.rank-movie {
+		flex-basis: 48%;
+		min-width: 230px;
+		padding-bottom: 20px;
 	}
 
 	.wrap-next a {
 		padding: 5px 10px;
 		top: 10px;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+
+	#trailer p {
+		font-size: 16px;
+	}
+
+	#trailer a {
+		padding: 20px 20px;
+		font-size: 16px;
+	}
+
+	#rank h3 {
+		margin-top: 25px;
+	}
+
+	.rank-movie {
+		flex-basis: 100%;
+	}
+
+	.wrap-next {
+		flex-direction: column-reverse;
+	}
+
+	.wrap-next .description {
+		text-align: center;
+	}
+
+	.wrap-next h3 {
+		font-size: 18px;
+		text-align: left;
 	}
 
 }
