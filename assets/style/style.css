@@ -313,7 +313,12 @@ table tr th {
 table tr td {
 	color: gray;
 	text-align: left;
-	padding-left: 10px
+	padding-left: 10px;
+}
+
+table tr a {
+	color: gray;
+	text-decoration: none;
 }
 
 .footer-logo {
